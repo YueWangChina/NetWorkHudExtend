@@ -37,7 +37,7 @@ TODO: AFNetworking的二次封装+Hud的二次封装结合使用
   end
   s.subspec 'NetWork' do |netWork|
       netWork.source_files='NetWorkHudExtend/Classes/NetWork/*.{h,m}'
-      ss.xcconfig = { "FRAMEWORK_SEARCH_PATHS" => "$(PODS_ROOT)/hUDExtend"}
+      netWork.xcconfig = { "FRAMEWORK_SEARCH_PATHS" => "$(PODS_ROOT)/hUDExtend"}
   end
   # s.resource_bundles = {
   #   'NetWorkHudExtend' => ['NetWorkHudExtend/Assets/*.png']
