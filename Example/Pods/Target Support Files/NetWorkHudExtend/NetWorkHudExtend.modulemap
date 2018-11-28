@@ -1,0 +1,6 @@
+framework module NetWorkHudExtend {
+  umbrella header "NetWorkHudExtend-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'NetWorkHudExtend'
-  s.version          = '0.1.0'
+  s.version          = '1.0.0'
   s.summary          = 'A short description of NetWorkHudExtend.'
 
 # This description is used to generate tags and improve search results.
@@ -18,25 +18,32 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+TODO: AFNetworking的二次封装+Hud的二次封装结合使用
                        DESC
 
-  s.homepage         = 'https://github.com/454431208@qq.com/NetWorkHudExtend'
+  s.homepage         = 'https://github.com/YueWangChina/NetWorkHudExtend'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { '454431208@qq.com' => 'wangyuexdy@163.com' }
-  s.source           = { :git => 'https://github.com/454431208@qq.com/NetWorkHudExtend.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/YueWangChina/NetWorkHudExtend.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
-
-  s.source_files = 'NetWorkHudExtend/Classes/**/*'
+  s.ios.deployment_target = '9.0'
+  s.public_header_files = 'NetWorkHudExtend/Classes/NetWorkHudExtend.h'
+  s.source_files = 'NetWorkHudExtend/Classes/NetWorkHudExtend.h'
   
+  s.subspec 'HUDExtend' do |hUDExtend|
+      hUDExtend.source_files='NetWorkHudExtend/Classes/HUDExtend/*.{h,m}'
+  end
+  s.subspec 'NetWork' do |netWork|
+      netWork.source_files='NetWorkHudExtend/Classes/NetWork/*.{h,m}'
+  end
   # s.resource_bundles = {
   #   'NetWorkHudExtend' => ['NetWorkHudExtend/Assets/*.png']
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+    s.dependency 'AFNetworking'
+    s.dependency 'MBProgressHUD'
 end
