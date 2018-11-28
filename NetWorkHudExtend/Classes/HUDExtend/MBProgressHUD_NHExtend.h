@@ -6,8 +6,8 @@
 //  Copyright © 2017年 neghao. All rights reserved.
 //
 
-#import "MBProgressHUD.h"
 
+#import "MBProgressHUD.h"
 typedef NS_ENUM(NSInteger, NHHUDContentStyle) {
     NHHUDContentDefaultStyle = 0,//默认是白底黑字 Default
     NHHUDContentBlackStyle = 1,//黑底白字
