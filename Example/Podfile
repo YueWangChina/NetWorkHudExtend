@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'NetWorkHudExtend_Example' do
+  pod 'NetWorkHudExtend', :path => '../'
+
+  target 'NetWorkHudExtend_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
