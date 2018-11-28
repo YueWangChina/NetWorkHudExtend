@@ -8,7 +8,7 @@
 
 #import "MBProgressHUD+NHAdd.h"
 #import "MBProgressHUD_NHExtend.h"
-#import "MBProgressHUD.h"
+
 #import <objc/message.h>
 
 CGFloat const delayTime = 1.2;

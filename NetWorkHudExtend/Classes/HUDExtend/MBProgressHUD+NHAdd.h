@@ -8,7 +8,7 @@
 
 #import "MBProgressHUD_NHExtend.h"
 #import <Foundation/Foundation.h>
-@class MBProgressHUD;
+
 
 //默认持续显示时间(x秒后消失)
 UIKIT_EXTERN CGFloat const delayTime;
