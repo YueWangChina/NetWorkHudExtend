@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'NetWorkHudExtend'
-  s.version          = '1.6.0'
+  s.version          = '1.7.0'
   s.summary          = 'A short description of NetWorkHudExtend.'
 
 # This description is used to generate tags and improve search results.
@@ -29,16 +29,21 @@ TODO: AFNetworking的二次封装+Hud的二次封装结合使用
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.0'
-  s.source_files='NetWorkHudExtend/Classes/HUDExtend/*.{h,m}','NetWorkHudExtend/Classes/NetWork/*.{h,m}','NetWorkHudExtend/Classes/*.{h}'
-  #  end
-  #  s.subspec 'NetWork' do |netWork|
-  #      netWork.source_files=
-  #  end
+  s.public_header_files = 'NetWorkHudExtend/Classes/NetWorkHudExtend.h'
+  s.source_files = 'NetWorkHudExtend/Classes/NetWorkHudExtend.h'
+  
+  s.subspec 'HUDExtend' do |hUDExtend|
+      hUDExtend.source_files='NetWorkHudExtend/Classes/HUDExtend/*.{h,m}'
+  end
+  s.subspec 'NetWork' do |netWork|
+      netWork.source_files='NetWorkHudExtend/Classes/NetWork/*.{h,m}'
+  end
   # s.resource_bundles = {
   #   'NetWorkHudExtend' => ['NetWorkHudExtend/Assets/*.png']
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
+  # s.frameworks = 'UIKit', 'MapKit'
     s.dependency 'AFNetworking'
     s.dependency 'MBProgressHUD'
 end
