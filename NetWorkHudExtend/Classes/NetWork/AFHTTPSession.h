@@ -14,6 +14,8 @@ typedef NS_ENUM(NSUInteger,HTTPSRequestType)
     Delete,
     Put
 };
+
+
 /**
  业务人员使用过程中仅得到三者中一者，其余两者均为 nil ,业务人员根据业务需求书写相关判断逻辑处理相关业务
  

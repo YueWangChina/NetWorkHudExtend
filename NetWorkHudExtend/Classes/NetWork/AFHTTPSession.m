@@ -8,7 +8,7 @@
 
 #import "AFHTTPSession.h"
 #import "AFNetWorkManager.h"
-#import "NetWorkHudExtend.h"
+#import "MBProgressHUD+NHAdd.h"
 @implementation AFHTTPSession
 
 

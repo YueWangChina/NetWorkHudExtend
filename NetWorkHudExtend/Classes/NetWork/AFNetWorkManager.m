@@ -21,9 +21,9 @@ typedef NS_ENUM(NSInteger, AFNetWorkType) {
         NSURLSessionConfiguration *config = [NSURLSessionConfiguration defaultSessionConfiguration];
         config.timeoutIntervalForRequest = 20.0;
 #if DEBUG
-        manager = [[AFNetWorkManager alloc]initWithBaseURL:[NSURL URLWithString:TestURL] sessionConfiguration:config];
+        manager = [[AFNetWorkManager alloc]initWithBaseURL:[NSURL URLWithString:BaseUrl(@"")] sessionConfiguration:config];
 #else
-        manager = [[AFNetWorkManager alloc]initWithBaseURL:[NSURL URLWithString:TestURL] sessionConfiguration:config];
+        manager = [[AFNetWorkManager alloc]initWithBaseURL:[NSURL URLWithString:BaseUrl(@"")] sessionConfiguration:config];
 #endif
 
         

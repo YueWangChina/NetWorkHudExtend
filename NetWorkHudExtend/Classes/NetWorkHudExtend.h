@@ -8,7 +8,7 @@
 
 #ifndef NetWorkHudExtend_h
 #define NetWorkHudExtend_h
-#define TestURL @"url"
+
 
 #import "MBProgressHUD+NHAdd.h"
 #import "AFHTTPSession.h"

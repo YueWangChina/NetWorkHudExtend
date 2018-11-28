@@ -7,7 +7,7 @@
 //
 
 #import "MBProgressHUD_NHExtend.h"
-
+#import <Foundation/Foundation.h>
 @class MBProgressHUD;
 
 //默认持续显示时间(x秒后消失)
@@ -156,10 +156,6 @@ UIKIT_EXTERN CGFloat const delayTime;
 
 /**
  文字 + 自定图片+ 自定朦胧层背景色
-
- @param image
- @param toView
- @param title
  @param backgroundColor 自定背景色
  */
 + (void)showCustomView:(UIView *)imageView toView:(UIView *)toView title:(NSString *)title backgroundColor:(UIColor *)backgroundColor;

@@ -11,7 +11,7 @@
 
 
 
-
+#define BaseUrl(URL) [NSString stringWithFormat:@"%@", (URL)]
 @interface AFNetWorkManager : AFHTTPSessionManager
 
 + (instancetype)sharedNetWork;
