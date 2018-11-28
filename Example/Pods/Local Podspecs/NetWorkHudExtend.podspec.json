@@ -1,6 +1,6 @@
 {
   "name": "NetWorkHudExtend",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "summary": "A short description of NetWorkHudExtend.",
   "description": "TODO: AFNetworking的二次封装+Hud的二次封装结合使用",
   "homepage": "https://github.com/YueWangChina/NetWorkHudExtend",
@@ -13,13 +13,16 @@
   },
   "source": {
     "git": "https://github.com/YueWangChina/NetWorkHudExtend.git",
-    "tag": "1.0.0"
+    "tag": "1.1.0"
   },
   "platforms": {
     "ios": "9.0"
   },
-  "public_header_files": "NetWorkHudExtend/Classes/NetWorkHudExtend.h",
-  "source_files": "NetWorkHudExtend/Classes/NetWorkHudExtend.h",
+  "source_files": [
+    "NetWorkHudExtend/Classes/HUDExtend/*.{h,m}",
+    "NetWorkHudExtend/Classes/NetWork/*.{h,m}",
+    "NetWorkHudExtend/Classes/*.{h}"
+  ],
   "dependencies": {
     "AFNetworking": [
 
@@ -27,15 +30,5 @@
     "MBProgressHUD": [
 
     ]
-  },
-  "subspecs": [
-    {
-      "name": "HUDExtend",
-      "source_files": "NetWorkHudExtend/Classes/HUDExtend/*.{h,m}"
-    },
-    {
-      "name": "NetWork",
-      "source_files": "NetWorkHudExtend/Classes/NetWork/*.{h,m}"
-    }
-  ]
+  }
 }
