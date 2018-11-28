@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'NetWorkHudExtend'
-  s.version          = '2.0.0'
+  s.version          = '2.1.0'
   s.summary          = 'A short description of NetWorkHudExtend.'
 
 # This description is used to generate tags and improve search results.
@@ -34,11 +34,11 @@ TODO: AFNetworking的二次封装+Hud的二次封装结合使用
   
   s.subspec 'HUDExtend' do |hUDExtend|
       hUDExtend.source_files='NetWorkHudExtend/Classes/HUDExtend/*.{h,m}'
-      hUDExtend.xcconfig = { "FRAMEWORK_SEARCH_PATHS" => "$(PODS_ROOT)/NetWork"}
+      hUDExtend.xcconfig = { "FRAMEWORK_SEARCH_PATHS" => "$(PODS_ROOT)/Classes/NetWork"}
   end
   s.subspec 'NetWork' do |netWork|
       netWork.source_files='NetWorkHudExtend/Classes/NetWork/*.{h,m}'
-      netWork.xcconfig = { "FRAMEWORK_SEARCH_PATHS" => "$(PODS_ROOT)/HUDExtend"}
+      netWork.xcconfig = { "FRAMEWORK_SEARCH_PATHS" => "$(PODS_ROOT)/Classes/HUDExtend"}
   end
   # s.resource_bundles = {
   #   'NetWorkHudExtend' => ['NetWorkHudExtend/Assets/*.png']
