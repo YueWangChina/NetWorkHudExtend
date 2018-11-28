@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'NetWorkHudExtend'
-  s.version          = '1.5.0'
+  s.version          = '1.6.0'
   s.summary          = 'A short description of NetWorkHudExtend.'
 
 # This description is used to generate tags and improve search results.
@@ -39,7 +39,6 @@ TODO: AFNetworking的二次封装+Hud的二次封装结合使用
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-    s.frameworks = 'AFNetworking', 'MBProgressHUD'
     s.dependency 'AFNetworking'
     s.dependency 'MBProgressHUD'
 end
